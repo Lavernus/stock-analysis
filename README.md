@@ -73,6 +73,7 @@ The formatting of the table didn't need to be changed at all, and the scripts th
 #### Green Stocks Over 2017 and 2018
 
 After running the code for both years, it returns two tables.
+![2017_table](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Add_Res_Ana/2017_table.png) ![2018_table](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Add_Res_Ana/2018_table.png)
 
 With the color coded "Return" column we can easily see that in 2017 the only stock to experience negative return was TERP, while other stocks returned a huge margin, with SEDG and DQ nearly tripling their returns and ENPH and FSLR over double theirs. We can see in 2018, however, that all stocks except ENPH and RUN experienced loss, with VSLR and TERP escaping the worst of it, having only lost 5% and 3.5% respectively. On the positive side, ENPH seems to be experiencing steady growth, and though it has dropped a bit in 2018, it is still a sizable amount at 81.9%. A safe bet may be to buy ENPH stock to bank on continued growth, or hop on FSLR stock while its in a dip and hope its past success could occur again.
 
@@ -82,10 +83,13 @@ Another interesting point to examine would be the volumes of stock each company 
 
 As mentioned in the background, I first started with a copy of the code that had the same utility as the one described in this analysis. The difference between the two is that the first edition, while having less scripts, took longer to run through the data since it would find the total volume, starting price, and ending price for a ticker and then output it into the table before looping back and moving on to the next ticker. This meant that, in practice, it was completing more steps than the new code since every time it found the values of the variables for the ticker it would output it into the table. The new code, however, keeps track of those values in arrays and outputs it into the table in its own loop that takes much less time at the end. This results in a much lower runtime, with the time elapsed going from these:
 
-
+![Old_2017](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Add_Res_Ana/Old_2017.png)
+![Old_2018](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Add_Res_Ana/Old_2018.png)
 
 to these:
 
+![VBA_Challenge_2017](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Resources/VBA_Challenge_2017.png)
+![VBA_Challenge_2018](https://github.com/Lavernus/stock-analysis/blob/main/Green%20Stocks/Resources/VBA_Challenge_2018.png)
 
 ## Summary
 Refactoring code offers a number of benefits. Improving the design of the overall code can increase the useability of it in the future by making it more adaptive to changes. It also gives you an opportunity to increase the readibility of the code which will make it easier to understand and easier to edit in the future. Mistakes and bugs that were glossed over the first time can also be found in a second or third read through.
